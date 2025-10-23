@@ -12,33 +12,23 @@ type Agent = {
   id: string;
   name: string;
   description: string;
-  icon: string;
 };
 
 const agents: Agent[] = [
   {
-    id: "weatherAgent",
-    name: "Weather Agent",
-    description: "Get weather information for any city",
-    icon: "🌤️",
-  },
-  {
     id: "personaAgent",
     name: "Persona Agent",
     description: "Interact with different personas",
-    icon: "🎭",
   },
   {
     id: "questionGeneratorWampAgent",
     name: "Question Generator (WAMP)",
     description: "Generate questions for WAMP",
-    icon: "❓",
   },
   {
     id: "questionGenieBiAgent",
     name: "Question Genie (BI)",
     description: "Generate BI-related questions",
-    icon: "🧞",
   },
 ];
 
@@ -111,7 +101,6 @@ export function ChatInterface() {
                   : "border-slate-200 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-700"
               }`}
             >
-              <div className="text-2xl mb-2">{agent.icon}</div>
               <div className="font-semibold text-slate-800 dark:text-white text-sm">
                 {agent.name}
               </div>
@@ -128,7 +117,6 @@ export function ChatInterface() {
         <div className="flex-1 overflow-y-auto mb-4 space-y-4">
           {messages.length === 0 ? (
             <div className="text-center text-slate-400 dark:text-slate-500 mt-8">
-              <div className="text-6xl mb-4">{currentAgent?.icon}</div>
               <p className="text-lg font-medium">{currentAgent?.name}</p>
               <p className="text-sm mt-2">{currentAgent?.description}</p>
               <p className="text-xs mt-4">Start a conversation below</p>

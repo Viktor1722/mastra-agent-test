@@ -2,7 +2,6 @@ import { Mastra } from "@mastra/core/mastra";
 import { PinoLogger } from "@mastra/loggers";
 import { LibSQLStore } from "@mastra/libsql";
 import { weatherWorkflow } from "./workflows/weather-workflow";
-import { weatherAgent } from "./agents/weather-agent";
 import { personaAgent } from "./agents/persona-agent";
 import { questionGeneratorWampAgent } from "./agents/questionWamp-agent";
 import { questionGenieBiAgent } from "./agents/questionGenieBI-agent";
@@ -10,7 +9,6 @@ import { questionGenieBiAgent } from "./agents/questionGenieBI-agent";
 export const mastra = new Mastra({
   workflows: { weatherWorkflow },
   agents: {
-    weatherAgent,
     personaAgent,
     questionGeneratorWampAgent,
     questionGenieBiAgent,

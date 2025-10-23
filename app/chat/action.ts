@@ -3,7 +3,6 @@
 import { mastra } from "@/mastra";
 
 export type AgentId =
-  | "weatherAgent"
   | "personaAgent"
   | "questionGeneratorWampAgent"
   | "questionGenieBiAgent";
