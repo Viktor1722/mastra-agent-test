@@ -17,18 +17,13 @@ type Agent = {
 const agents: Agent[] = [
   {
     id: "personaAgent",
-    name: "Persona Agent",
-    description: "Interact with different personas",
+    name: "Persona Generator",
+    description: "Create detailed user personas",
   },
   {
-    id: "questionGeneratorWampAgent",
-    name: "Question Generator (WAMP)",
-    description: "Generate questions for WAMP",
-  },
-  {
-    id: "questionGenieBiAgent",
-    name: "Question Genie (BI)",
-    description: "Generate BI-related questions",
+    id: "questionAgent",
+    name: "Question Generator",
+    description: "Generate Mom Test interview questions",
   },
 ];
 

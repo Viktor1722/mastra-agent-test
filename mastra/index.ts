@@ -3,15 +3,13 @@ import { PinoLogger } from "@mastra/loggers";
 import { LibSQLStore } from "@mastra/libsql";
 import { weatherWorkflow } from "./workflows/weather-workflow";
 import { personaAgent } from "./agents/persona-agent";
-import { questionGeneratorWampAgent } from "./agents/questionWamp-agent";
-import { questionGenieBiAgent } from "./agents/questionGenieBI-agent";
+import { questionAgent } from "./agents/question-agent";
 
 export const mastra = new Mastra({
   workflows: { weatherWorkflow },
   agents: {
     personaAgent,
-    questionGeneratorWampAgent,
-    questionGenieBiAgent,
+    questionAgent,
   },
   storage: new LibSQLStore({
     // stores observability, scores, ... into memory storage, if it needs to persist, change to file:../mastra.db

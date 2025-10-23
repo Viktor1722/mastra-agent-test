@@ -2,10 +2,7 @@
 
 import { mastra } from "@/mastra";
 
-export type AgentId =
-  | "personaAgent"
-  | "questionGeneratorWampAgent"
-  | "questionGenieBiAgent";
+export type AgentId = "personaAgent" | "questionAgent";
 
 export async function sendMessage(agentId: AgentId, message: string) {
   try {

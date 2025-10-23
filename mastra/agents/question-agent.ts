@@ -1,8 +1,8 @@
 import { openai } from "@ai-sdk/openai";
 import { Agent } from "@mastra/core/agent";
 
-export const questionGeneratorWampAgent = new Agent({
-  name: "Question generator Wamp agent",
+export const questionAgent = new Agent({
+  name: "Question generator agent",
   instructions: `
 You are an expert at generating interview questions following The Mom Test principles.
 
