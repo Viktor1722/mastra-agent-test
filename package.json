@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@ai-sdk/openai": "^2.0.53",
     "@mastra/client-js": "^0.16.2",
     "@mastra/core": "^0.22.0",
     "@mastra/libsql": "^0.16.0",
